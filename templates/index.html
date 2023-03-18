@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<h2 align="center">Works log</h2>
+{% for table in tables %}
+    {{ table|safe }}
+{% endfor %}
+
+{% endblock %}
